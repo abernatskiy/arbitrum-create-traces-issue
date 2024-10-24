@@ -1,7 +1,6 @@
-import {TypeormDatabase} from '@subsquid/typeorm-store'
-import {Burn} from './model'
+import {MockDatabase} from '@belopash/mock-store'
 import {processor} from './processor'
 
-processor.run(new TypeormDatabase({supportHotBlocks: true}), async (ctx) => {
+processor.run(new MockDatabase(), async (ctx) => {
   console.log(`Got ${ctx.blocks.length} blocks`)
 })

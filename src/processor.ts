@@ -15,7 +15,7 @@ export const processor = new EvmBatchProcessor()
     })
     .setFinalityConfirmation(75)*/
     .setBlockRange({
-        from: 0,
+        from: 322891,
     })
     .addTrace({
         type: ['create'],

@@ -5,6 +5,7 @@
     "build": "rm -rf lib && tsc"
   },
   "dependencies": {
+    "@belopash/mock-store": "^0.0.0",
     "@subsquid/evm-abi": "^0.3.1",
     "@subsquid/evm-processor": "^1.22.0",
     "@subsquid/graphql-server": "^4.9.0",
